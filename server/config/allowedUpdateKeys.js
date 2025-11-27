@@ -1,0 +1,1 @@
+export const allowedUpdateKeys = ["firstName", "lastName", "picture", "gender", "contactNo", "dob", "country", "city"];

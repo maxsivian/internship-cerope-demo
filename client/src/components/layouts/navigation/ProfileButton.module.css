@@ -1,0 +1,57 @@
+.container {
+  width: 40px;
+  aspect-ratio: 1/1;
+  /* height: 40px; */
+
+  border: 2px solid rgb(252, 191, 252);
+  border-radius: 100%;
+  cursor: pointer;
+
+  position: relative;
+  /* overflow: hidden; */
+}
+
+.imageContainer {
+  /* border: 1px solid blue; */
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 100%;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+}
+
+/*  */
+
+.dropdownContainer {
+  position: absolute;
+  right: 0;
+  top: 130%;
+
+  /* border: 1px solid blue; */
+  background-color: white;
+  box-shadow: 0px 0px 5px gray;
+  /* padding: 10px; */
+  border-radius: 7px;
+}
+
+.dropdownContainer ul {
+  display: flex;
+  flex-direction: column;
+  gap: unset;
+  /* gap: 5px; */
+}
+
+.dropdownContainer li {
+  padding: 10px;
+  white-space: nowrap;
+}
+
+/* .dropdownContainer button{
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+} */

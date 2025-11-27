@@ -1,0 +1,8 @@
+.body {
+  /* border: 1px solid blueviolet; */
+  /* background-color: aqua; */
+  padding-top: 50px;
+  padding-bottom: 50px;
+  min-height: 100vh;
+  background-image: var(--gradient1);
+}

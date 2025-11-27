@@ -1,0 +1,61 @@
+.button {
+  /* Layout */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px; /* Space between text and star */
+  padding: 12px 28px;
+  
+  /* Shape */
+  border-radius: 50px; /* Pill shape */
+  border: 2px solid transparent; 
+  /* Transparent border to reveal the gradient behind */
+
+  /* 
+     Gradient Border Logic:
+     1. The first gradient is the inner background color (light lavender). Clipped to padding-box.
+     2. The second gradient is the rainbow border. Clipped to border-box.
+  */
+  background: 
+    linear-gradient(#EBE5FF, #EBE5FF) padding-box,
+    linear-gradient(90deg, #ff00cc, #8800ff, #00ccff, #00ff66) border-box;
+
+  /* Typography */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #111;
+  line-height: 1;
+  text-decoration: none;
+  white-space: nowrap;
+
+  /* Visual Effects */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Soft drop shadow */
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+/* Hover State */
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Active/Click State */
+.button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+/* Sparkle Icon SVG styling */
+.icon svg {
+  width: 14px;
+  height: 14px;
+  fill: #111;
+}

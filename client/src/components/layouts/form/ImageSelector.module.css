@@ -1,0 +1,133 @@
+.container {
+  /* border: 1px solid red; */
+  /* padding: 5px; */
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Top Large Avatar */
+.currentAvatarWrapper {
+  /* border: 1px solid green; */
+  /* position: relative; */
+  /* margin-bottom: -40px;  */
+  /* z-index: 10; */
+  /* margin: auto; */
+  width: 140px;
+  height: 140px;
+  margin: auto;
+}
+
+.currentAvatar {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 6px solid rgb(226, 206, 238);
+  /* box-shadow: 0 0 0 6px #fef0d6; */
+  background-color: #fff;
+  object-fit: cover;
+}
+
+/* Main Card */
+.card {
+  /* border: 1px solid blue; */
+  width: 100%;
+  /* padding: 60px 20px 20px 20px; */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Dropdown Header */
+.dropdownHeader {
+  border: 2px solid gray;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  color: #666;
+  font-size: 16px;
+  transition: border-color 0.3s;
+
+  user-select: none;
+}
+
+.dropdownHeader:hover {
+  border-color: var(--color2);
+}
+
+.chevron {
+  width: 18px;
+  height: 18px;
+  transition: transform 0.2s ease;
+  opacity: 0.6;
+}
+
+.chevron.open {
+  transform: rotate(180deg);
+}
+
+/* Avatar Grid */
+.gridContainer {
+  outline: none;
+  border: 2px solid gray;
+  border-radius: 10px;
+
+  padding: 5px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.avatarOption {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid transparent;
+  padding: 2px;
+  box-sizing: border-box;
+}
+
+.avatarOption img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: block;
+}
+
+.avatarOption:hover {
+  transform: scale(1.05);
+}
+
+/* Selection State */
+.selected {
+  border-color: #000; /* The black ring around selection */
+}
+
+/* Action Button */
+.selectButton {
+  width: 50%;
+  padding: 7px;
+  background: white;
+  border: 2px solid gray;
+  border-radius: 6px;
+  font-weight: 600;
+  color: #000;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 14px;
+
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+

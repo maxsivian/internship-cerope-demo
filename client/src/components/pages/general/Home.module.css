@@ -1,0 +1,17 @@
+.container{
+    /* border: 1px solid red; */
+    padding-top: 100px;
+    /* min-height: 100vh; */
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lists{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
